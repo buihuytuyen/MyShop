@@ -42,7 +42,7 @@ public class AdminOrderDetails extends HttpServlet {
             // Get displayOrder by orderID
             displayOrderList = displayOrderDAO.getAll(orderID);
             
-           request.setAttribute("displayOrderList", displayOrderList); 
+            request.setAttribute("displayOrderList", displayOrderList); 
             request.setAttribute("customer", customer);
         } catch (Exception e) {
         }

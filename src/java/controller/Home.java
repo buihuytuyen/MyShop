@@ -34,20 +34,20 @@ public class Home extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         ArrayList<model.Product> bestSellingProducts = new ArrayList<>();
-        ArrayList<model.Product> latestProducts = new ArrayList<>();
+        ArrayList<model.Product> Products = new ArrayList<>();
         
         // Get TOP 9 Best Selling Products
         ProductDAO productDAO = new ProductDAO();
         try {
             bestSellingProducts = productDAO.getTop9BestSellingProducts();
-            latestProducts = productDAO.get9LatestProducts();
+            Products = productDAO.getAllProducts();
         } catch (SQLException ex) {
             Logger.getLogger(Home.class.getName()).log(Level.SEVERE, null, ex);
         }
         
         // Assign to request
         request.setAttribute("bestSellingProducts", bestSellingProducts);
-        request.setAttribute("latestProducts", latestProducts);
+        request.setAttribute("Products", Products);
 
         request.getServletContext().getRequestDispatcher("/homePageView.jsp").forward(request, response);
     }

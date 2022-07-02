@@ -18,13 +18,13 @@
                     <a class="nav-link <% if (request.getAttribute("javax.servlet.forward.request_uri").toString().contains("home")) {%>active<% } %>" aria-current="page" href="home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="https://www.facebook.com/buihuytuyen9912/">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" >Contact Us</a>
+                    <a class="nav-link" href="https://www.facebook.com/buihuytuyen9912/" >Contact Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Blogs</a>
+                    <a class="nav-link" href="https://www.facebook.com/buihuytuyen9912/">Blogs</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link <% if (request.getAttribute("javax.servlet.forward.request_uri").toString().contains("track")) {%>active<% }%>" href="track">Track Order</a>

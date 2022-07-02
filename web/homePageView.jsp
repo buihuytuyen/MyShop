@@ -51,9 +51,9 @@
 
     <!-- LATEST PRODUCTS -->
     <div class="best-sellling mt-5">
-        <h2 class="text-center mb-4">Latest Shop</h2>
+        <h2 class="text-center mb-4">Products</h2>
         <div class="row">
-            <c:forEach items="${requestScope.latestProducts}" var="product">
+            <c:forEach items="${requestScope.Products}" var="product">
                <div class="col-sm-6 col-md-4 mt-3">
                 <div class="product-small-box border p-3 shadow-sm rounded" onclick="window.location.href='product?id=${product.productID}';">
                     <img src="${product.img}" class="d-block img-fluid" />

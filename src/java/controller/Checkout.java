@@ -80,7 +80,7 @@ public class Checkout extends HttpServlet {
             }
         }
         
-        // Forward to order completed
+//         Forward to order completed
         request.setAttribute("orderID", orderID);
         request.setAttribute("email", rEmail);
         request.setAttribute("phone", rPhone);
@@ -89,8 +89,6 @@ public class Checkout extends HttpServlet {
         request.getSession().setAttribute("cart", null);
         
         request.getServletContext().getRequestDispatcher("/orderCompleteView.jsp").forward(request, response);
-        
-        
         
         } catch (Exception e) {}
     }

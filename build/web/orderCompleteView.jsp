@@ -5,7 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<% request.setAttribute("pageTitle", "View Cart - MyShop");%>
+<% request.setAttribute("pageTitle", "Order Complete - MyShop");%>
 <%@ include file="_header.jsp" %>
 <%@ include file="_navbar.jsp" %>
 <div class="container">
